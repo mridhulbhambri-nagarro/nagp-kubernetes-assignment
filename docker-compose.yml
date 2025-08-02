@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-data:/var/lib/mysql
+
+  app:
+    image: mridhulbhambri/node-mysql-app
+    container_name: node-app
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./config/.env.dev
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  db-data:

@@ -1,5 +1,5 @@
 const mysql = require('mysql2/promise');
-const config = require('./config');  // because config.js is in the root
+const config = require('./app/config');  // because config.js is in the root
 
 const pool = mysql.createPool({
   host: config.db.host,
