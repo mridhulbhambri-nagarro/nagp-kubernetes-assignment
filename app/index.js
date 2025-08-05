@@ -1,9 +1,13 @@
 const express = require('express');
-const pool = require('./app/db');
-const config = require('./app/config');
+const pool = require('./db');
+const config = require('./configLoader');
 
 const app = express();
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.status(200).send('OK');
+});
 
 // GET all users
 app.get('/users', async (req, res) => {

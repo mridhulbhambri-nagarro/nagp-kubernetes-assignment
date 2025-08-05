@@ -9,6 +9,6 @@ spec:
   selector:
     app: node-app
   ports:
-    - port: 3000           # Service port
-      targetPort: 3000     # Container port
-      nodePort: 30080      # Exposed port on your machine (range: 30000–32767)
+    - port: 3000           
+      targetPort: 3000     
+      nodePort: 30080      

@@ -50,5 +50,5 @@ spec:
             claimName: mysql-pvc
         - name: init-script
           configMap:
-            name: mysql-init-script
+            name: mysql-initdb-config
 
