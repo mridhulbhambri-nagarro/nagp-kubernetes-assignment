@@ -12,6 +12,8 @@ This project demonstrates a multi-tier application deployed on **Google Kubernet
 
 ## 📁 Repository Structure
 
+```bash
+
 my-k8s-project/
 ├── app/                   # Node.js app code (service tier)
 │   └── ...
@@ -25,6 +27,7 @@ my-k8s-project/
 ├── docker-compose.yml     # (Optional) Compose for local dev/testing
 └── README.md
 
+```
 
 ---
 
@@ -51,16 +54,16 @@ my-k8s-project/
 
 ## 🧪 Testing Scenarios & Demos
 
-📽️ **Screen Recording Placeholders**
+📽️ **Screen Recording** - [Recording Link](https://nagarro-my.sharepoint.com/:v:/p/mridhul_bhambri/EVedaz7ZA-ZAqCOnp3CaN78BGDlhlWGbPDwbUxGZH0HpkQ)
 
-| Scenario                                                                 |
+| Scenarios Covered                                                        |
 |--------------------------------------------------------------------------|
 | Show all deployed Kubernetes objects and their current state             |
 | Make an API call that retrieves data from the MySQL database             | 
 | Kill an API pod and show the Deployment brings it back automatically     |
 | Kill the MySQL pod and verify that: <br>1. It recovers via StatefulSet <br>2. Old data is retained (PVC is working) |
 
-[Recording Link](https://nagarro-my.sharepoint.com/:v:/p/mridhul_bhambri/EVedaz7ZA-ZAqCOnp3CaN78BGDlhlWGbPDwbUxGZH0HpkQ)
+
 ---
 
 ## 🚀 How to Deploy on GCP (Step-by-Step)
